@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>London Bridge Rooftop Restaurant</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400&family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-bg: #0B1026;
+            --secondary-bg: #1F2937;
+            --champagne-gold: #F3E5AB;
+            --metallic-bronze: #CD7F32;
+            --soft-silver: #E5E7EB;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--primary-bg);
+            color: var(--soft-silver);
+            font-family: 'Lato', sans-serif;
+            overflow-x: hidden;
+        }
+
+        /* Prevent standard anchor navigation from breaking the frame */
+        section, footer {
+            scroll-margin-top: 80px;
+        }
+
+        h1, h2, h3, h4, .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .heading-cinzel {
+            font-family: 'Cinzel', serif;
+        }
+
+        /* Golden Beam Animation */
+        .btn-luxury {
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .btn-luxury::after {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -100%;
+            width: 40px;
+            height: 200%;
+            background: rgba(255, 255, 255, 0.4);
+            transform: rotate(35deg);
+            transition: none;
+        }
+
+        .btn-luxury:hover::after {
+            left: 150%;
+            transition: left 0.6s ease-in-out;
+        }
+
+        /* Pulsing Animation */
+        @keyframes pulse-gold {
+            0% { box-shadow: 0 0 0 0 rgba(243, 229, 171, 0.4); }
+            70% { box-shadow: 0 0 0 10px rgba(243, 229, 171, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(243, 229, 171, 0); }
+        }
+
+        .animate-pulse-gold {
+            animation: pulse-gold 2s infinite;
+        }
+
+        /* Dot Leaders for Menu */
+        .dot-leader {
+            flex-grow: 1;
+            border-bottom: 1px dotted rgba(243, 229, 171, 0.3);
+            margin: 0 8px;
+            margin-bottom: 4px;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--primary-bg);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--metallic-bronze);
+            border-radius: 4px;
+        }
+        
+        /* Map Theme Filter */
+        .dark-map {
+            filter: grayscale(100%) invert(92%) contrast(83%);
+        }
+
+        /* Nav underline effect */
+        .nav-link {
+            position: relative;
+            cursor: pointer;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 1px;
+            bottom: -4px;
+            left: 0;
+            background-color: var(--champagne-gold);
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "framer-motion": "https://esm.sh/framer-motion@^12.23.26",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
