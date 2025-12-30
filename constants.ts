@@ -5,7 +5,7 @@ export const MENU_DATA: MenuCategory[] = [
   {
     title: "Soups & Starters",
     items: [
-      { name: "Tomato Soup", price: 120 },
+      { name: "Tomato Soup", price: 110 },
       { name: "Hot & Sour Soup", price: 130 },
       { name: "Manchow Soup", price: 150 },
       { name: "Paneer Chilli", price: 270 },
