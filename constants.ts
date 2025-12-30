@@ -5,13 +5,13 @@ export const MENU_DATA: MenuCategory[] = [
   {
     title: "Soups & Starters",
     items: [
-      { name: "Tomato Soup", price: 110 },
-      { name: "Hot & Sour Soup", price: 130 },
-      { name: "Manchow Soup", price: 150 },
-      { name: "Paneer Chilli", price: 270 },
-      { name: "Mushroom Chilli", price: 240 },
-      { name: "Crispy Corn", price: 190 },
-      { name: "Chicken Chilli", price: 260, isNonVeg: false },
+      { name: "Tomato Soup", price: 100 },
+      { name: "Hot & Sour Soup", price: 120 },
+      { name: "Manchow Soup", price: 140 },
+      { name: "Paneer Chilli", price: 250 },
+      { name: "Mushroom Chilli", price: 250 },
+      { name: "Crispy Corn", price: 200 },
+      { name: "Chicken Chilli", price: 260, isNonVeg: true },
       { name: "Chicken Lollypop", price: 280, isNonVeg: true },
     ]
   },
