@@ -12,6 +12,7 @@ export const MENU_DATA: MenuCategory[] = [
       { name: "Mushroom Chilli", price: 250 },
       { name: "Crispy Corn", price: 200 },
       { name: "Chicken Chilli", price: 260, isNonVeg: true },
+      {outOfStock: true },
       { name: "Chicken Lollypop", price: 280, isNonVeg: true },
     ]
   },
