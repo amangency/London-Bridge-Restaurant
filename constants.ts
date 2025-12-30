@@ -5,13 +5,13 @@ export const MENU_DATA: MenuCategory[] = [
   {
     title: "Soups & Starters",
     items: [
-      { name: "Tomato Soup", price: 90 },
-      { name: "Hot & Sour Soup", price: 100 },
-      { name: "Manchow Soup", price: 110 },
-      { name: "Paneer Chilli", price: 220 },
+      { name: "Tomato Soup", price: 120 },
+      { name: "Hot & Sour Soup", price: 130 },
+      { name: "Manchow Soup", price: 150 },
+      { name: "Paneer Chilli", price: 270 },
       { name: "Mushroom Chilli", price: 240 },
       { name: "Crispy Corn", price: 190 },
-      { name: "Chicken Chilli", price: 260, isNonVeg: true },
+      { name: "Chicken Chilli", price: 260, isNonVeg: false },
       { name: "Chicken Lollypop", price: 280, isNonVeg: true },
     ]
   },
@@ -19,7 +19,7 @@ export const MENU_DATA: MenuCategory[] = [
     title: "Main Course (Veg)",
     items: [
       { name: "Paneer Butter Masala", price: 260 },
-      { name: "Kadhai Paneer", price: 260 },
+      { name: "Kadhai Paneer", price: 270 },
       { name: "Mix Vegetable", price: 220 },
       { name: "Malai Kofta", price: 260 },
       { name: "Dal Makhani", price: 190 },
